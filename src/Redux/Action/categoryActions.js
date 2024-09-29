@@ -1,4 +1,3 @@
-// src/Redux/Action/categoryActions.js
 import axios from "axios";
 
 export const fetchCategories = () => {

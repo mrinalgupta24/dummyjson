@@ -1,4 +1,4 @@
-// src/Redux/Action/productActions.js
+
 import axios from "axios";
 
 export const fetchProducts = (url) => {

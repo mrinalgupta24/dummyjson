@@ -10,7 +10,7 @@ import {
   FiHeart,
 } from "react-icons/fi";
 
-// Define your category URLs based on the provided data
+// Category URLs based on the provided data
 const categoryUrls = {
   beauty: "https://dummyjson.com/products/category/beauty",
   fragrances: "https://dummyjson.com/products/category/fragrances",
@@ -150,8 +150,8 @@ const ProductList = () => {
                     <div key={index} className="flex items-center">
                       <input
                         id={`category-${index}`}
-                        type="radio" // Change to radio for single select
-                        checked={selectedCategory === category.slug} // Compare with the category slug
+                        type="radio"
+                        checked={selectedCategory === category.slug} 
                         onChange={() => handleCategoryChange(category.slug)}
                         className="mr-2 h-4 w-4"
                       />
@@ -159,7 +159,7 @@ const ProductList = () => {
                         htmlFor={`category-${index}`}
                         className="text-sm font-medium text-gray-700"
                       >
-                        {category.name} {/* Render the category name */}
+                        {category.name} 
                       </label>
                     </div>
                   ))}

@@ -1,11 +1,10 @@
-// src/Redux/Reducers/categoryReducer.js
+
 const initialState = {
   categories: [],
   loading: false,
   error: null,
 };
 
-// Category reducer
 const categoryReducer = (state = initialState, action) => {
   switch (action.type) {
     case "FETCH_CATEGORIES_REQUEST":
