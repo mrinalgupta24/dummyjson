@@ -124,8 +124,7 @@ const ProductList = () => {
         </div>
 
         <div className="md:gap-6 lg:flex lg:items-start xl:gap-8">
-
-                  <div className="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
+          <div className="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
             <div className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
               <h3 className="text-lg font-semibold">Categories</h3>
               <div>
@@ -151,7 +150,7 @@ const ProductList = () => {
                       <input
                         id={`category-${index}`}
                         type="radio"
-                        checked={selectedCategory === category.slug} 
+                        checked={selectedCategory === category.slug}
                         onChange={() => handleCategoryChange(category.slug)}
                         className="mr-2 h-4 w-4"
                       />
@@ -159,7 +158,7 @@ const ProductList = () => {
                         htmlFor={`category-${index}`}
                         className="text-sm font-medium text-gray-700"
                       >
-                        {category.name} 
+                        {category.name}
                       </label>
                     </div>
                   ))}
@@ -168,9 +167,8 @@ const ProductList = () => {
             </div>
           </div>
 
-
           <div className="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
-            <div className="mt-6 mb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mt-8">
+            <div className="mt-6 mb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:mt-8">
               {filteredProducts.slice(0, visibleProducts).map((product) => (
                 <div
                   key={product.id}
@@ -238,7 +236,7 @@ const ProductList = () => {
                         type="button"
                         className="inline-flex items-center rounded-lg bg-[#0c2d67] px-7 py-2.5 text-sm font-medium text-white border border-black hover:bg-[#011e50]"
                       >
-                        <FiShoppingCart className="-ms-2 me-2 h-5 w-5" /> Cart
+                        <FiShoppingCart className="-ms-2 me-2 h-5 w-5" /> Add To Cart
                       </button>
                     </div>
                   </div>
@@ -258,8 +256,6 @@ const ProductList = () => {
               </div>
             )}
           </div>
-
-
         </div>
       </div>
     </section>
